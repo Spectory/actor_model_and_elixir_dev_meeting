@@ -14,7 +14,8 @@ Much of your time as a computer programmer will likely be spent debugging. There
 
 ####K.I.S.S
 <img src="./kiss.jpg" alt="Drawing" width="200" align="right" />
- - Don't look for complex explanations. Start with simple things that a easy to check.
+ - Don't look for complex explanations.
+ - Start with the simple things that are easy to check & rule them out.
  - Use your intuition, check the code you suspect the most first. Good instincts will come with
 experience.
 
@@ -44,7 +45,7 @@ experience.
 #### Elementary, my dear Watson
 <img src="./sherlok.jpg" alt="Drawing" width="100"align="right" />
  - When all is done, you should be able to explain in Sherlock Holmes style the series of facts, tests, and deductions that led you to your consultation.
- - We're engineers, not magicians. There are no bunnies at our hats.
+ - We're engineers, not magicians. There are no bunnies in our hats.
  - We need to report to someone, i.e. bosses ("what happened?"), clients ("Why am I paying you guys?"), consumers ("Doesn't work on LG3! Worst app ever!!!")...
    - The bug is HERE, I'll show you.
    - The bug is not HERE, I'll prove that to you.
@@ -53,15 +54,16 @@ experience.
 
 #### Everybody poops
 <img src="./poop.jpg" alt="Drawing" width="100"align="right" />
- - Bugs are in the nature of code. That's life.
- - Don't try to find who to blame.
+ - Bugs are in the nature of coding. We all do it. That's life.
+ - Don't look for someone to blame.
  - Be critical about your own code.
- - Any peace of code is the potential bug until proven otherwise
+ - Any peace of code is the potential bug until proven otherwise.
+ - Vendors & external libs have bugs too.
 
 ---
 
 #### You are not alone
-<img src="./island.jpeg" alt="Drawing" width="225"align="right" />
+<img src="./island.jpg" alt="Drawing" width="225"align="right" />
  - Dont be shy. We're all in it togeher, just ask around.
  - Asking the rigth question is as important as finding right answer.
  - Often explaining the problem to someone else makes it clearer to you.
