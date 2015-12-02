@@ -69,19 +69,29 @@ Elixir
 
 example: 
 ```elixir
+defmodule CookieMonster do
+  def read_cookie_monster_mailbox do
+    receive do
+      # wait for incoming msg
+      {:food, arg} -> eat_cookie({:food, arg})
+      _ -> raise "invalid msg"
+    end
+    read_cookie_monster_mailbox
+  end
 
-  def eat_cookie(nil)
+  defp eat_cookie({:food, nil}) do
     IO.puts "Hey! where is my cookie you bastard?!"
   end
-  def eat_cookie({:food, cookie})
+  defp eat_cookie({:food, "cookie"}) do
     IO.puts "Om Num Num Num Num!"
   end
-  def eat_cookie({:food, broccoli})
+  defp eat_cookie({:food, "broccoli"}) do
     IO.puts "I hate broccoli!"
   end
-  def eat_cookie(_)
-    IO.puts "WTF is that?"
+  defp eat_cookie({:food, somthing}) do
+    IO.puts "#{somthing}?? WTF is that?!"
   end
+end
 ```
 
 Phoenix:

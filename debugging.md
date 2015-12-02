@@ -2,7 +2,7 @@
 #Debugging
 <img src="./cockroaches.jpg" alt="Drawing" width="250" />
 
-Much of your time as a computer programmer will likely be spent debugging. There is no text book answer foe 'how to debug', but I found those guidelines helpful.
+Much of your time as a computer programmer will likely be spent debugging. There is no text book answer on 'how to debug', but hopefully you'll find those guidelines helpful.
 
 ===
 
@@ -26,13 +26,17 @@ experience.
 <img src="./bug.jpg" alt="Drawing" width="100"align="right" />
  - The bug is not moving around in your code, trying to trick or evade you. It is just sitting in one place, doing the wrong thing in the same way every time.
  - If you code was working a minute ago, but now it doesn't - what was the last thing you changed?
+ - Check version control to check latest changes to the code base
+ - Check DB changes
+ - If the code is has not changed, did anything special happened lately. for example date changes such as time zone change, new year, new month...
 
 ---
 
 #### We are all going to DIE!!!
 <img src="./courage.jpg" alt="Drawing" width="100"align="right" />
  - Don't panic.
- - Do not change your code haphazardly trying to track down a bug. This is sort of like a scientist who changes more than one variable in an experiment at a time.
+ - Do not change your code haphazardly trying to track down a bug.
+ - This is sort of like a scientist who changes more than one variable in an experiment at a time.
 
 ---
 
@@ -45,9 +49,10 @@ experience.
 
 #### Elementary, my dear Watson
 <img src="./sherlok.jpg" alt="Drawing" width="100"align="right" />
- - When all is done, you should be able to explain in Sherlock Holmes style the series of facts, tests, and deductions that led you to your consultation.
+ - You should be able to explain in Sherlock Holmes style the series of facts, tests, and deductions that led you to your consultation.
  - We're engineers, not magicians. There are no bunnies in our hats.
  - We need to report to someone, i.e. bosses ("what happened?"), clients ("Why am I paying you guys?"), consumers ("Doesn't work on LG3! Worst app ever!!!")...
+ - You should be able to say
    - The bug is HERE, I'll show you.
    - The bug is not HERE, I'll prove that to you.
 
@@ -65,10 +70,12 @@ experience.
 
 #### You are not alone
 <img src="./island.jpg" alt="Drawing" width="150"align="right" />
- - Dont be shy. We're all in it togeher, just ask around.
- - Asking the rigth question is as important as finding right answer.
+ - Don't be shy. We're all in it together, just ask around.
+ - Asking the right question is as important as finding right answer.
  - Often explaining the problem to someone else makes it clearer to you.
- - Diffrent people - diffrent views.
+ - When presenting the bug to some else, don't explain what you did/changed so far. Explain what is problem right NOW, and let him do his own thinking.
+ - Different people - Different views.
+ - Double the people - Double the experience.
 
 ---
 
@@ -77,7 +84,7 @@ experience.
  - Debugging code is more mentally demanding than writing code.
  - The longer you try to track down a bug without success, the less perspective you tend to have.
  - Realize when you have lost the perspective on your code to debug
- - ask yourself - Do I remember what brought me to THIS piece of code?
+ - Ask yourself - Do I remember what brought me to THIS piece of code?
  - Take a break. Get some sleep.
 
 
