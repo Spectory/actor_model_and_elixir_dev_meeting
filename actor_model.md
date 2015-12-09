@@ -49,6 +49,38 @@ Each objects has a mail box - a queue that receive messages from the world.
 
 So, if our back-account from earlier is an actor, running on its own thread, there is no way for 2 withdraws to occur simultaneously 
 
+```ruby
+  class BankAccount
+
+    def recieve(msg)
+      action = msg.action
+      amount = msg.amount
+      case action
+      when :add
+        add amount
+      when :withdraw
+        withdraw amount
+      else
+        raise "Unknown action #{action}"
+      end
+    end
+
+    private
+
+    def add(num)
+      @avilable_funds =+ num
+    end
+    
+    def withdraw(sum)
+      add(-sum) if can_withdrow
+    end
+
+    def can_withdrow(sum)
+      # check accounts limits & stuff
+    end
+  end
+```
+
 Erlang - Takes it up to 11!
 ----------------------------
 Erlang takes the the Actor model to the extreme. Basically Erlang is saying "If we Actors share nothing, why should they share the same machine?".

@@ -2,11 +2,13 @@
 #Debugging
 <img src="./imgs/cockroaches.jpg" alt="Drawing" width="250" />
 
-Much of your time as a computer programmer will likely be spent debugging. There is no text book answer on 'how to debug', but hopefully you'll find those guidelines helpful.
+Much of your time as a computer programmer will likely be spent debugging, no way out of it. Sadly there is no text book answer on 'how to debug', but there are a few tips & technics you can use.
+
+So what is exactly 'debugging'? Some programmers think of it as *'a search for the right answers'*. But I prefer to think of it as *'the art of asking the right questions'*
 
 ===
 
-####Get your facts right!
+####Get your facts straight!
 <img src="./imgs/brainy.jpg" alt="Drawing" width="150" align="right" />
  - The computer is not trying to mislead you. The clue to what is wrong in your code is in the values of your variables and the flow of control. Try to see what the facts are pointing to.
  - Intuition and hunches are great, but when a hunch and a fact collide, the fact wins.
@@ -73,7 +75,7 @@ experience.
  - Don't be shy. We're all in it together, just ask around.
  - Asking the right question is as important as finding right answer.
  - Often explaining the problem to someone else makes it clearer to you.
- - When presenting the bug to some else, don't explain what you did/changed so far. Explain what is problem right NOW, and let him do his own thinking.
+ - When presenting the bug to a co-worker, don't explain what you did/changed so far. Explain what is problem right NOW, and let him do his own thinking.
  - Different people - Different views.
  - Double the people - Double the experience.
 
@@ -92,5 +94,3 @@ experience.
 #### Unit test
 <img src="./imgs/bart.jpg" alt="Drawing" width="225"align="right" />
  - There are 2 kinds of programmers. The ones that write tests & the ones that wished they had.
- - The second kind are assholes.
- - No body likes an asshole, so JUST DO IT YOU F@#!!!
